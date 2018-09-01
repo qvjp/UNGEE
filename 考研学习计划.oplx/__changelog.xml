@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:13:40.920Z" timestamp="2018-08-25T08:13:40.920Z">
+    <change idref="t10" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsfQp7XGNvbG9ydGJsO1xyZWQyNTVcZ3JlZW4yNTVcYmx1ZTI1NTt9CntcKlxleHBhbmRlZGNvbG9ydGJsOzt9Cn0=" resolved="yes"/>
+    <change idref="t11" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsfQp7XGNvbG9ydGJsO1xyZWQyNTVcZ3JlZW4yNTVcYmx1ZTI1NTt9CntcKlxleHBhbmRlZGNvbG9ydGJsOzt9Cn0=" resolved="yes"/>
+    <change idref="t12" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsfQp7XGNvbG9ydGJsO1xyZWQyNTVcZ3JlZW4yNTVcYmx1ZTI1NTt9CntcKlxleHBhbmRlZGNvbG9ydGJsOzt9Cn0=" resolved="yes"/>
+    <change idref="t13" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsfQp7XGNvbG9ydGJsO1xyZWQyNTVcZ3JlZW4yNTVcYmx1ZTI1NTt9CntcKlxleHBhbmRlZGNvbG9ydGJsOzt9Cn0=" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:17:25.278Z" timestamp="2018-08-25T08:17:25.278Z">
+    <change idref="t30" to="t10" to-position="1" resolved="yes">
+      <change idref="t30" attribute="effort" type="real" from="28800" to="3637800"/>
+      <change idref="t30" attribute="internalPrerequisitesString" type="string" to="27FS"/>
+      <change idref="t30" attribute="title" type="string" to="高数"/>
+    </change>
+    <change idref="t11" attribute="internalPrerequisitesString" type="string" to="27FS" resolved="yes"/>
+    <change idref="t27" attribute="title" type="string" from="高数" to="高数学习" resolved="yes"/>
+    <change idref="t27" attribute="effort" type="real" from="3880800" to="244800" resolved="yes"/>
+    <change idref="t28" attribute="effort" type="real" from="3880800" to="3628800" resolved="yes"/>
+    <change idref="t28" attribute="internalPrerequisitesString" type="string" to="27FS" resolved="yes"/>
+    <change idref="t29" attribute="effort" type="real" from="3880800" to="3628800" resolved="yes"/>
+    <change idref="t29" attribute="internalPrerequisitesString" type="string" to="27FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:18:55.893Z" timestamp="2018-08-25T08:18:55.893Z">
+    <change idref="t11" attribute="internalPrerequisitesString" type="string" from="27FS" resolved="yes"/>
+    <change idref="t12" attribute="internalPrerequisitesString" type="string" from="11SS" resolved="yes"/>
+    <change idref="t13" attribute="internalPrerequisitesString" type="string" from="11FS" resolved="yes"/>
+    <change idref="t14" attribute="title" type="string" from="数据结构" to="数据结构学习" resolved="yes"/>
+    <change idref="t15" attribute="title" type="string" from="计算机组成原理" to="计算机组成原理学习" resolved="yes"/>
+    <change idref="t28" attribute="title" type="string" from="线代" to="线代练习" resolved="yes"/>
+    <change idref="t29" attribute="title" type="string" from="概率" to="概率练习" resolved="yes"/>
+    <change idref="t30" attribute="title" type="string" from="高数" to="高数练习" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:19:08.205Z" timestamp="2018-08-25T08:19:08.205Z">
+    <change idref="t15" attribute="internalPrerequisitesString" type="string" from="14FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:29:10.550Z" timestamp="2018-08-25T08:29:10.550Z">
+    <change idref="t10" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYzNcJ2JmXCdjY1wnZWNcJ2M5XCdjZlwnY2VcJ2U3XCdkN1wnZjZcJ2NhXCdmZFwnZDFcJ2E3XCdhM1wnYThcJ2M4XCdmZFwnYmZcJ2M2XCdiNlwnYmNcJ2Q3XCdmNlwnYTNcJ2E5fQ==" resolved="yes"/>
+    <change idref="t29" from="t10" from-position="3" resolved="yes">
+      <change idref="t29" attribute="effort" type="real" from="28800" to="3628800"/>
+      <change idref="t29" attribute="internalPrerequisitesString" type="string" to="27FS"/>
+      <change idref="t29" attribute="title" type="string" to="概率练习"/>
+    </change>
+    <change idref="t28" from="t10" from-position="2" resolved="yes">
+      <change idref="t28" attribute="effort" type="real" from="28800" to="3628800"/>
+      <change idref="t28" attribute="internalPrerequisitesString" type="string" to="27FS"/>
+      <change idref="t28" attribute="title" type="string" to="线代练习"/>
+    </change>
+    <change idref="t30" from="t10" from-position="1" resolved="yes">
+      <change idref="t30" attribute="effort" type="real" from="28800" to="3637800"/>
+      <change idref="t30" attribute="internalPrerequisitesString" type="string" to="27FS"/>
+      <change idref="t30" attribute="title" type="string" to="高数练习"/>
+    </change>
+    <change idref="t27" from="t10" from-position="0" resolved="yes">
+      <change idref="t27" attribute="effort" type="real" from="28800" to="244800"/>
+      <change idref="t27" attribute="title" type="string" to="高数学习"/>
+    </change>
+    <change idref="t31" to="t10" to-position="0" resolved="yes">
+      <change idref="t31" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t31" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t31" attribute="title" type="string" to="学习"/>
+    </change>
+    <change idref="t37" to="t10" to-position="1" resolved="yes">
+      <change idref="t37" attribute="internalPrerequisitesString" type="string" to="15FS"/>
+      <change idref="t37" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t37" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYzNcJ2JmXCdjY1wnZWNcJ2M5XCdjZlwnY2VcJ2U3XCdkN1wnZjZcJ2NhXCdmZFwnZDFcJ2E3XCdhM1wnYThcJ2M4XCdmZFwnYmZcJ2M2XCdiNlwnYmNcJ2Q3XCdmNlwnYTNcJ2E5fQ=="/>
+      <change idref="t37" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t37" attribute="title" type="string" to="练习"/>
+    </change>
+    <change idref="t43" to="t11" to-position="2" resolved="yes">
+      <change idref="t43" attribute="internalPrerequisitesString" type="string" to="15FS"/>
+      <change idref="t43" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t43" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t43" attribute="title" type="string" to="专业练习"/>
+    </change>
+    <change idref="t12" attribute="internalPrerequisitesString" type="string" to="15FS" resolved="yes"/>
+    <change idref="t13" attribute="internalPrerequisitesString" type="string" to="15FS" resolved="yes"/>
+    <change idref="t14" attribute="internalPrerequisitesString" type="string" to="31FS" resolved="yes"/>
+    <change idref="t15" attribute="internalPrerequisitesString" type="string" to="14FS" resolved="yes"/>
+    <change idref="t39" to="t37" to-position="0" resolved="yes">
+      <change idref="t39" attribute="effort" type="real" from="28800" to="3628800"/>
+      <change idref="t39" attribute="title" type="string" to="高数"/>
+    </change>
+    <change idref="t40" to="t37" to-position="1" resolved="yes">
+      <change idref="t40" attribute="effort" type="real" from="28800" to="3628800"/>
+      <change idref="t40" attribute="title" type="string" to="线代"/>
+    </change>
+    <change idref="t41" to="t37" to-position="2" resolved="yes">
+      <change idref="t41" attribute="effort" type="real" from="28800" to="3628800"/>
+      <change idref="t41" attribute="title" type="string" to="概率"/>
+    </change>
+    <change idref="t44" to="t43" to-position="0" resolved="yes">
+      <change idref="t44" attribute="title" type="string" to="两科真题试卷"/>
+    </change>
+    <change idref="t33" to="t31" to-position="0" resolved="yes">
+      <change idref="t33" attribute="effort" type="real" from="28800" to="244800"/>
+      <change idref="t33" attribute="title" type="string" to="高数学习"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:31:34.609Z" timestamp="2018-08-25T08:31:34.609Z">
+    <change idref="t45" to="t15" to-position="0" resolved="yes">
+      <change idref="t45" attribute="title" type="string" to="任务 1"/>
+    </change>
+    <change idref="t46" to="t15" to-position="1" resolved="yes">
+      <change idref="t46" attribute="internalPrerequisitesString" type="string" to="45FS"/>
+      <change idref="t46" attribute="title" type="string" to="任务 2"/>
+    </change>
+    <change idref="t47" to="t15" to-position="2" resolved="yes">
+      <change idref="t47" attribute="internalPrerequisitesString" type="string" to="46FS"/>
+      <change idref="t47" attribute="title" type="string" to="任务 3"/>
+    </change>
+    <change idref="t48" to="t15" to-position="3" resolved="yes">
+      <change idref="t48" attribute="internalPrerequisitesString" type="string" to="47FS"/>
+      <change idref="t48" attribute="title" type="string" to="任务 4"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:33:51.165Z" timestamp="2018-08-25T08:33:51.165Z">
+    <change idref="t49" to="t15" to-position="4" resolved="yes">
+      <change idref="t49" attribute="title" type="string" to="任务 5"/>
+    </change>
+    <change idref="t50" to="t15" to-position="5" resolved="yes">
+      <change idref="t50" attribute="title" type="string" to="任务 6"/>
+    </change>
+    <change idref="t51" to="t15" to-position="6" resolved="yes">
+      <change idref="t51" attribute="title" type="string" to="任务 7"/>
+    </change>
+    <change idref="t52" to="t15" to-position="7" resolved="yes">
+      <change idref="t52" attribute="title" type="string" to="任务 8"/>
+    </change>
+    <change idref="t53" to="t15" to-position="8" resolved="yes">
+      <change idref="t53" attribute="title" type="string" to="任务 9"/>
+    </change>
+    <change idref="t16" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t17" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t18" attribute="effort" type="real" from="57600" to="72000" resolved="yes"/>
+    <change idref="t19" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t20" attribute="effort" type="real" from="57600" to="72000" resolved="yes"/>
+    <change idref="t21" attribute="effort" type="real" from="57600" to="72000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:34:39.642Z" timestamp="2018-08-25T08:34:39.642Z">
+    <change idref="t43" attribute="internalPrerequisitesString" type="string" to="15FS" resolved="yes"/>
+    <change idref="t44" to="t43" to-position="0" resurrection="yes" resolved="yes">
+      <change idref="t44" attribute="title" type="string" to="两科真题试卷"/>
+    </change>
+    <change idref="t45" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t46" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t47" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t48" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t49" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t50" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t51" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t52" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t53" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t44" to="t43" to-position="0" resurrection="yes" resolved="yes">
+      <change idref="t44" attribute="title" type="string" to="两科真题试卷"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:35:26.535Z" timestamp="2018-08-25T08:35:26.535Z">
+    <change idref="t49" attribute="internalPrerequisitesString" type="string" to="48FS" resolved="yes"/>
+    <change idref="t50" attribute="internalPrerequisitesString" type="string" to="49FS" resolved="yes"/>
+    <change idref="t51" attribute="internalPrerequisitesString" type="string" to="50FS" resolved="yes"/>
+    <change idref="t52" attribute="internalPrerequisitesString" type="string" to="51FS" resolved="yes"/>
+    <change idref="t53" attribute="internalPrerequisitesString" type="string" to="52FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:40:42.549Z" timestamp="2018-08-25T08:40:42.549Z">
+    <change idref="t55" to="t12" to-position="0" resolved="yes">
+      <change idref="t55" attribute="effort" type="real" from="28800" to="2980800"/>
+      <change idref="t55" attribute="title" type="string" to="英语真题试卷"/>
+    </change>
+    <change idref="t56" to="t13" to-position="0" resolved="yes">
+      <change idref="t56" attribute="effort" type="real" from="28800" to="2980800"/>
+      <change idref="t56" attribute="title" type="string" to="背背吗？"/>
+    </change>
+    <change idref="t39" attribute="effort" type="real" from="3628800" to="2980800" resolved="yes"/>
+    <change idref="t40" attribute="effort" type="real" from="3628800" to="2980800" resolved="yes"/>
+    <change idref="t41" attribute="effort" type="real" from="3628800" to="2980800" resolved="yes"/>
+    <change idref="t44" attribute="effort" type="real" from="28800" to="2980800" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:44:57.773Z" timestamp="2018-08-25T08:44:57.773Z">
+    <change idref="t33" attribute="effort" type="real" from="244800" to="252000" resolved="yes"/>
+    <change idref="t39" attribute="effort" type="real" from="2980800" to="2988000" resolved="yes"/>
+    <change idref="t40" attribute="effort" type="real" from="2980800" to="2988000" resolved="yes"/>
+    <change idref="t41" attribute="effort" type="real" from="2980800" to="2988000" resolved="yes"/>
+    <change idref="t44" attribute="effort" type="real" from="2980800" to="2988000" resolved="yes"/>
+    <change idref="t55" attribute="effort" type="real" from="2980800" to="2988000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:45:48.716Z" timestamp="2018-08-25T08:45:48.716Z">
+    <change idref="t31" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO1xmMVxmbmlsXGZjaGFyc2V0MCBIZWx2ZXRpY2FOZXVlO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYjhcJ2NmXCdiZFwnZjRcJ2I1XCdjNFwnYjVcJ2RhClxmMSBcY2YyIG4KXGYwIFxjZjIgXCdjMlwnZDZcJ2I4XCdiNFwnY2ZcJ2IwXCdjZFwnZWFcJ2EzXCdhY1wnYmZcJ2FhXCdjYVwnYmNcJ2Q3XCdmNlwnY2NcJ2UyfQ==" resolved="yes"/>
+    <change idref="t56" attribute="effort" type="real" from="2980800" to="2988000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:47:50.529Z" timestamp="2018-08-25T08:47:50.529Z">
+    <change idref="t11" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYzNcJ2JmXCdjY1wnZWNcJ2NkXCdlZFwnYzlcJ2NmXCdkN1wnYThcJ2QyXCdiNVwnYmZcJ2NlfQ==" resolved="yes"/>
+    <change idref="t12" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYzNcJ2JmXCdjY1wnZWNcJ2NmXCdjMlwnY2VcJ2U3XCdkM1wnYTJcJ2QzXCdlZn0=" resolved="yes"/>
+    <change idref="t13" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnZDdcJ2E4XCdkMlwnYjVcJ2JmXCdjZVwnZDJcJ2JiXCdjMlwnZDZcJ2I4XCdiNFwnY2ZcJ2IwXCdiZFwnZTFcJ2NhXCdmOFwnYmFcJ2YzXCdiZlwnYWFcJ2NhXCdiY1wnZDFcJ2E3XCdkNVwnZmVcJ2Q2XCdjZX0=" resolved="yes"/>
+    <change idref="t43" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYzNcJ2JmXCdjY1wnZWNcJ2NkXCdlZFwnYzlcJ2NmXCdkN1wnYThcJ2QyXCdiNVwnYmZcJ2NlXCdjMVwnYjdcJ2NmXCdiMH0=" resolved="yes"/>
+    <change idref="t55" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYzNcJ2JmXCdjY1wnZWNcJ2NmXCdjMlwnY2VcJ2U3XCdkM1wnYTJcJ2QzXCdlZn0=" resolved="yes"/>
+    <change idref="t56" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnZDdcJ2E4XCdkMlwnYjVcJ2JmXCdjZVwnZDJcJ2JiXCdjMlwnZDZcJ2I4XCdiNFwnY2ZcJ2IwXCdiZFwnZTFcJ2NhXCdmOFwnYmFcJ2YzXCdiZlwnYWFcJ2NhXCdiY1wnZDFcJ2E3XCdkNVwnZmVcJ2Q2XCdjZX0=" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:48:42.973Z" timestamp="2018-08-25T08:48:42.973Z">
+    <change idref="t39" attribute="title" type="string" from="高数" to="高数练习" resolved="yes"/>
+    <change idref="t40" attribute="title" type="string" from="线代" to="线代练习" resolved="yes"/>
+    <change idref="t41" attribute="title" type="string" from="概率" to="概率练习" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:50:52.819Z" timestamp="2018-08-25T08:50:52.819Z">
+    <change idref="t58" to="t-1" to-position="4" resolved="yes">
+      <change idref="t58" attribute="effort" type="real" from="28800" to="432000"/>
+      <change idref="t58" attribute="internalPrerequisitesString" type="string" to="10FS, 11FS, 12FS, 13FS"/>
+      <change idref="t58" attribute="noEarlierThanConstraintDate" type="date" to="2018-12-11T00:00:00.000Z"/>
+      <change idref="t58" attribute="title" type="string" to="综合复习（仿真）"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:51:54.942Z" timestamp="2018-08-25T08:51:54.942Z">
+    <change idref="t51" from="t15" from-position="6" resolved="yes">
+      <change idref="t51" attribute="effort" type="real" from="28800" to="36000"/>
+      <change idref="t51" attribute="internalPrerequisitesString" type="string" to="50FS"/>
+      <change idref="t51" attribute="title" type="string" to="任务 7"/>
+    </change>
+    <change idref="t50" from="t15" from-position="5" resolved="yes">
+      <change idref="t50" attribute="effort" type="real" from="28800" to="36000"/>
+      <change idref="t50" attribute="internalPrerequisitesString" type="string" to="49FS"/>
+      <change idref="t50" attribute="title" type="string" to="任务 6"/>
+    </change>
+    <change idref="t49" from="t15" from-position="4" resolved="yes">
+      <change idref="t49" attribute="effort" type="real" from="28800" to="36000"/>
+      <change idref="t49" attribute="internalPrerequisitesString" type="string" to="48FS"/>
+      <change idref="t49" attribute="title" type="string" to="任务 5"/>
+    </change>
+    <change idref="t52" attribute="internalPrerequisitesString" type="string" from="51FS" to="48FS" resolved="yes"/>
+    <change idref="t52" attribute="title" type="string" from="任务 8" to="任务 5" resolved="yes"/>
+    <change idref="t53" attribute="title" type="string" from="任务 9" to="任务 6" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:52:12.493Z" timestamp="2018-08-25T08:52:12.493Z">
+    <change idref="t46" attribute="effort" type="real" from="36000" to="108000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:53:17.554Z" timestamp="2018-08-25T08:53:17.554Z">
+    <change idref="t46" attribute="effort" type="real" from="108000" to="144000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T08:57:34.087Z" timestamp="2018-08-25T08:57:34.087Z">
+    <change idref="t31" attribute="title" type="string" from="学习" to="数学学习" resolved="yes"/>
+    <change idref="t37" attribute="title" type="string" from="练习" to="数学练习" resolved="yes"/>
+    <change idref="t61" to="t43" to-position="1" resolved="yes">
+      <change idref="t61" attribute="effort" type="real" from="28800" to="2988000"/>
+      <change idref="t61" attribute="title" type="string" to="计算机组成原理真题试卷"/>
+    </change>
+    <change idref="t44" attribute="title" type="string" from="两科真题试卷" to="数据结构真题试卷" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:05:11.632Z" timestamp="2018-08-25T09:05:11.632Z">
+    <change idref="t15" attribute="title" type="string" from="计算机组成原理学习" to="计组学习" resolved="yes"/>
+    <change idref="t61" attribute="title" type="string" from="计算机组成原理真题试卷" to="计组真题试卷" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:06:39.837Z" timestamp="2018-08-25T09:06:39.837Z">
+    <change idref="t62" to="t-1" to-position="4" resolved="yes">
+      <change idref="t62" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t62" attribute="internalPrerequisitesString" type="string" to="58SS"/>
+      <change idref="t62" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t62" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t62" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t62" attribute="title" type="string" to="这时候什么都会了吧"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:08:00.182Z" timestamp="2018-08-25T09:08:00.182Z">
+    <change idref="t58" attribute="internalPrerequisitesString" type="string" from="10FS, 11FS, 12FS, 13FS" to="62FS" resolved="yes"/>
+    <change idref="t62" attribute="internalPrerequisitesString" type="string" from="58SS" to="10FS, 11FS, 12FS, 13FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:10:28.145Z" timestamp="2018-08-25T09:10:28.145Z">
+    <change idref="t67" to="t11" to-position="0" resolved="yes">
+      <change idref="t67" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t67" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t67" attribute="title" type="string" to="专业学习"/>
+    </change>
+    <change idref="t14" from="t11" from-position="0" to="t67" to-position="0" resolved="yes"/>
+    <change idref="t15" from="t11" from-position="1" to="t67" to-position="1" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:12:40.200Z" timestamp="2018-08-25T09:12:40.200Z">
+    <change idref="t12" attribute="internalPrerequisitesString" type="string" from="15FS" to="67FS" resolved="yes"/>
+    <change idref="t13" attribute="internalPrerequisitesString" type="string" from="15FS" to="67FS" resolved="yes"/>
+    <change idref="t37" attribute="internalPrerequisitesString" type="string" from="15FS" to="67FS" resolved="yes"/>
+    <change idref="t43" attribute="internalPrerequisitesString" type="string" from="15FS" to="67FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:13:52.677Z" timestamp="2018-08-25T09:13:52.677Z">
+    <change idref="t14" attribute="internalPrerequisitesString" type="string" from="31FS" resolved="yes"/>
+    <change idref="t67" attribute="internalPrerequisitesString" type="string" to="31FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:20:59.643Z" timestamp="2018-08-25T09:20:59.643Z">
+    <change idref="t68" to="t-1" to-position="6" resolved="yes">
+      <change idref="t68" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t68" attribute="internalPrerequisitesString" type="string" to="58FS"/>
+      <change idref="t68" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t68" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t68" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t68" attribute="title" type="string" to="考试"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:21:56.447Z" timestamp="2018-08-25T09:21:56.447Z">
+    <change idref="t69" to="t-1" to-position="0" resolved="yes">
+      <change idref="t69" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t69" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t69" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t69" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t69" attribute="title" type="string" to="开始"/>
+    </change>
+    <change idref="t10" attribute="internalPrerequisitesString" type="string" to="69FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:55:39.398Z" timestamp="2018-08-25T09:55:39.398Z">
+    <change idref="t75" to="t-1" to-position="1" resolved="yes">
+      <change idref="t75" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t75" attribute="internalPrerequisitesString" type="string" to="67FS"/>
+      <change idref="t75" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t75" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t75" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t75" attribute="title" type="string" to="开始做题"/>
+    </change>
+    <change idref="t12" attribute="internalPrerequisitesString" type="string" from="67FS" to="75FS" resolved="yes"/>
+    <change idref="t13" attribute="internalPrerequisitesString" type="string" from="67FS" to="75FS" resolved="yes"/>
+    <change idref="t37" attribute="internalPrerequisitesString" type="string" from="67FS" to="75FS" resolved="yes"/>
+    <change idref="t43" attribute="internalPrerequisitesString" type="string" from="67FS" to="75FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T09:59:35.268Z" timestamp="2018-08-25T09:59:35.268Z">
+    <change idref="t75" from="t-1" from-position="1" to="t-1" to-position="3" resolved="yes"/>
+    <change idref="t76" to="t-1" to-position="4" resolved="yes">
+      <change idref="t76" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t76" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t76" attribute="title" type="string" to="练习"/>
+    </change>
+    <change idref="t37" from="t10" from-position="1" to="t76" to-position="0" resolved="yes"/>
+    <change idref="t43" from="t11" from-position="1" to="t76" to-position="1" resolved="yes"/>
+    <change idref="t13" from="t-1" from-position="5" to="t76" to-position="2" resolved="yes"/>
+    <change idref="t12" from="t-1" from-position="4" to="t76" to-position="3" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:00:20.010Z" timestamp="2018-08-25T10:00:20.010Z">
+    <change idref="t12" attribute="internalPrerequisitesString" type="string" from="75FS" resolved="yes"/>
+    <change idref="t13" attribute="internalPrerequisitesString" type="string" from="75FS" resolved="yes"/>
+    <change idref="t37" attribute="internalPrerequisitesString" type="string" from="75FS" resolved="yes"/>
+    <change idref="t43" attribute="internalPrerequisitesString" type="string" from="75FS" resolved="yes"/>
+    <change idref="t76" attribute="internalPrerequisitesString" type="string" to="75FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:01:34.009Z" timestamp="2018-08-25T10:01:34.009Z">
+    <change idref="t62" attribute="internalPrerequisitesString" type="string" from="10FS, 11FS, 12FS, 13FS" to="76FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:03:23.394Z" timestamp="2018-08-25T10:03:23.394Z">
+    <change idref="t11" from="t-1" from-position="2" resolved="yes">
+      <change idref="t11" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t11" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t11" attribute="title" type="string" to="专业"/>
+    </change>
+    <change idref="t10" from="t-1" from-position="1" resolved="yes">
+      <change idref="t10" attribute="internalPrerequisitesString" type="string" to="69FS"/>
+      <change idref="t10" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t10" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t10" attribute="title" type="string" to="数学"/>
+    </change>
+    <change idref="t31" from="t10" from-position="0" to="t-1" to-position="1" resolved="yes"/>
+    <change idref="t67" from="t11" from-position="0" to="t-1" to-position="2" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:05:33.209Z" timestamp="2018-08-25T10:05:33.209Z">
+    <change idref="t75" attribute="noEarlierThanConstraintDate" type="date" to="2018-09-19T01:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:07:26.271Z" timestamp="2018-08-25T10:07:26.271Z">
+    <change idref="t77" to="t-1" to-position="1" resolved="yes">
+      <change idref="t77" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t77" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t77" attribute="title" type="string" to="学习"/>
+    </change>
+    <change idref="t75" attribute="internalPrerequisitesString" type="string" from="67FS" to="77FS" resolved="yes"/>
+    <change idref="t31" from="t-1" from-position="1" to="t77" to-position="0" resolved="yes"/>
+    <change idref="t67" from="t-1" from-position="2" to="t77" to-position="1" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:08:14.694Z" timestamp="2018-08-25T10:08:14.694Z">
+    <change idref="t75" attribute="title" type="string" from="开始做题" to="学完完成" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:08:24.826Z" timestamp="2018-08-25T10:08:24.826Z">
+    <change idref="t77" attribute="internalPrerequisitesString" type="string" to="69FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:09:39.914Z" timestamp="2018-08-25T10:09:39.914Z">
+    <change idref="t37" attribute="title" type="string" from="数学练习" to="数学" resolved="yes"/>
+    <change idref="t43" attribute="title" type="string" from="专业练习" to="专业" resolved="yes"/>
+    <change idref="t75" attribute="title" type="string" from="学完完成" to="学习完成" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:10:22.628Z" timestamp="2018-08-25T10:10:22.628Z">
+    <change idref="t16" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t17" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t18" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t19" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t20" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t21" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t33" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t39" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t40" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t41" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t44" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t45" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t46" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t47" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t48" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t52" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t53" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t55" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t56" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t58" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t61" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t62" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t68" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t69" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t75" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:13:04.342Z" timestamp="2018-08-25T10:13:04.342Z">
+    <change idref="t78" to="t-1" to-position="0" resolved="yes">
+      <change idref="t78" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t78" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t78" attribute="title" type="string" to="考研计划"/>
+    </change>
+    <change idref="t58" attribute="noEarlierThanConstraintDate" type="date" from="2018-12-11T00:00:00.000Z" resolved="yes"/>
+    <change idref="t69" from="t-1" from-position="0" to="t78" to-position="0" resolved="yes"/>
+    <change idref="t77" from="t-1" from-position="1" to="t78" to-position="1" resolved="yes"/>
+    <change idref="t75" from="t-1" from-position="2" to="t78" to-position="2" resolved="yes"/>
+    <change idref="t76" from="t-1" from-position="3" to="t78" to-position="3" resolved="yes"/>
+    <change idref="t62" from="t-1" from-position="4" to="t78" to-position="4" resolved="yes"/>
+    <change idref="t58" from="t-1" from-position="5" to="t78" to-position="5" resolved="yes"/>
+    <change idref="t68" from="t-1" from-position="6" to="t78" to-position="6" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:13:37.383Z" timestamp="2018-08-25T10:13:37.383Z">
+    <change idref="t58" attribute="effort" type="real" from="432000" to="428400" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:15:17.959Z" timestamp="2018-08-25T10:15:17.959Z">
+    <change idref="t58" attribute="effort" type="real" from="428400" to="432000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:15:51.969Z" timestamp="2018-08-25T10:15:51.969Z">
+    <change idref="t58" attribute="effort" type="real" from="432000" to="428400" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:21:16.208Z" timestamp="2018-08-25T10:21:16.208Z">
+    <change idref="t45" attribute="title" type="string" from="任务 1" to="概述+数据表示和运算" resolved="yes"/>
+    <change idref="t46" attribute="title" type="string" from="任务 2" to="存储系统" resolved="yes"/>
+    <change idref="t46" attribute="effort" type="real" from="144000" to="72000" resolved="yes"/>
+    <change idref="t47" attribute="title" type="string" from="任务 3" to="指令系统" resolved="yes"/>
+    <change idref="t47" attribute="effort" type="real" from="36000" to="72000" resolved="yes"/>
+    <change idref="t48" attribute="title" type="string" from="任务 4" to="中央处理器" resolved="yes"/>
+    <change idref="t48" attribute="effort" type="real" from="36000" to="72000" resolved="yes"/>
+    <change idref="t52" attribute="title" type="string" from="任务 5" to="总线" resolved="yes"/>
+    <change idref="t53" attribute="title" type="string" from="任务 6" to="I/O系统" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Junping Qv" date="2018-08-25T10:27:55.392Z" timestamp="2018-08-25T10:27:55.392Z">
+    <change idref="t12" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYzNcJ2JmXCdjY1wnZWNcJ2NmXCdjMlwnY2VcJ2U3XCdkM1wnYTJcJ2QzXCdlZn0=" resolved="yes"/>
+    <change idref="t13" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYmJcJ2I5XCdjM1wnYmJcJ2NmXCdlYlwnYmFcJ2MzXCdkNVwnZmVcJ2Q2XCdjZVwnZDRcJ2Y1XCdjM1wnYjRcJ2I4XCdiNFwnY2ZcJ2IwXCdhMVwnYTNcJ2ExXCdhM1wnYTFcJ2EzfQ==" resolved="yes"/>
+    <change idref="t55" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnYzNcJ2JmXCdjY1wnZWNcJ2NmXCdjMlwnY2VcJ2U3XCdkM1wnYTJcJ2QzXCdlZn0=" resolved="yes"/>
+    <change idref="t56" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzkzNlxjb2NvYXJ0ZjE1NjFcY29jb2FzdWJydGY2MDAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQxMzQgUGluZ0ZhbmdTQy1SZWd1bGFyO30Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7XHJlZDg1XGdyZWVuODVcYmx1ZTg1O30Ke1wqXGV4cGFuZGVkY29sb3J0Ymw7O1xjc2dyYXlcYzQwOTIyO30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMyNCBcY2YyIFwnZDdcJ2E4XCdkMlwnYjVcJ2JmXCdjZVwnZDJcJ2JiXCdjMlwnZDZcJ2I4XCdiNFwnY2ZcJ2IwXCdiZFwnZTFcJ2NhXCdmOFwnYmFcJ2YzXCdiZlwnYWFcJ2NhXCdiY1wnZDFcJ2E3XCdkNVwnZmVcJ2Q2XCdjZX0=" resolved="yes"/>
+  </task-change-set>
+  <resource-change-set user="Junping Qv" date="2018-08-25T10:10:22.627Z" timestamp="2018-08-25T10:10:22.627Z">
+    <change idref="r1" attribute="name" type="string" from="God" to="Online" resolved="yes"/>
+  </resource-change-set>
+  <resource-change-set user="Junping Qv" date="2018-08-25T10:27:55.390Z" timestamp="2018-08-25T10:27:55.390Z">
+    <change idref="r1" attribute="name" type="string" from="Online" to="" resolved="yes"/>
+  </resource-change-set>
+  <metadata-change-set user="Junping Qv" date="2018-08-25T10:27:55.390Z" timestamp="2018-08-25T10:27:55.390Z">
+    <change idref="m1" attribute="projectTitle" type="string" from="考研安排（二期）" to="考研学习计划（中途计划）" resolved="yes"/>
+  </metadata-change-set>
+</changelog>

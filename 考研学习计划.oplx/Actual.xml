@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="jLLFN4vRQKd">
+  <start-date>2018-08-25T00:00:00.000Z</start-date>
+  <granularity>hours</granularity>
+  <prototype-task>
+    <task id="t-2">
+      <title>任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <name/>
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="28800" end-time="41400"/>
+        <time-span start-time="50400" end-time="63000"/>
+        <time-span start-time="64800" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="41400"/>
+        <time-span start-time="50400" end-time="63000"/>
+        <time-span start-time="64800" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="41400"/>
+        <time-span start-time="50400" end-time="63000"/>
+        <time-span start-time="64800" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="41400"/>
+        <time-span start-time="50400" end-time="63000"/>
+        <time-span start-time="64800" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="41400"/>
+        <time-span start-time="50400" end-time="63000"/>
+        <time-span start-time="64800" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="41400"/>
+        <time-span start-time="50400" end-time="63000"/>
+        <time-span start-time="64800" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="28800" end-time="41400"/>
+        <time-span start-time="50400" end-time="63000"/>
+        <time-span start-time="64800" end-time="75600"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name/>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t78"/>
+  </task>
+  <task id="t12">
+    <title>英语</title>
+    <type>group</type>
+    <child-task idref="t55"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>每天下午英语</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t13">
+    <title>政治</title>
+    <type>group</type>
+    <child-task idref="t56"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>还没想好政治怎么复习。。。</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t14">
+    <title>数据结构学习</title>
+    <type>group</type>
+    <child-task idref="t16"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <child-task idref="t19"/>
+    <child-task idref="t20"/>
+    <child-task idref="t21"/>
+  </task>
+  <task id="t15">
+    <title>计组学习</title>
+    <type>group</type>
+    <child-task idref="t45"/>
+    <child-task idref="t46"/>
+    <child-task idref="t47"/>
+    <child-task idref="t48"/>
+    <child-task idref="t52"/>
+    <child-task idref="t53"/>
+    <prerequisite-task idref="t14"/>
+  </task>
+  <task id="t16">
+    <title>线性表</title>
+    <effort>36000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t17">
+    <title>栈和队列</title>
+    <effort>36000</effort>
+    <prerequisite-task idref="t16"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t18">
+    <title>树与二叉树</title>
+    <effort>72000</effort>
+    <prerequisite-task idref="t17"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t19">
+    <title>图</title>
+    <effort>36000</effort>
+    <prerequisite-task idref="t18"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t20">
+    <title>查找</title>
+    <effort>72000</effort>
+    <prerequisite-task idref="t19"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t21">
+    <title>排序</title>
+    <effort>72000</effort>
+    <prerequisite-task idref="t20"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t31">
+    <title>数学学习</title>
+    <type>group</type>
+    <child-task idref="t33"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>赶紧的第n轮复习完，开始做题</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t33">
+    <title>高数学习</title>
+    <effort>252000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t37">
+    <title>数学</title>
+    <type>group</type>
+    <child-task idref="t39"/>
+    <child-task idref="t40"/>
+    <child-task idref="t41"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>每天上午做数学（三科都做）</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t39">
+    <title>高数练习</title>
+    <effort>2988000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t40">
+    <title>线代练习</title>
+    <effort>2988000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t41">
+    <title>概率练习</title>
+    <effort>2988000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t43">
+    <title>专业</title>
+    <type>group</type>
+    <child-task idref="t44"/>
+    <child-task idref="t61"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>每天晚上专业课练习</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t44">
+    <title>数据结构真题试卷</title>
+    <effort>2988000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t45">
+    <title>概述+数据表示和运算</title>
+    <effort>36000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t46">
+    <title>存储系统</title>
+    <effort>72000</effort>
+    <prerequisite-task idref="t45"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t47">
+    <title>指令系统</title>
+    <effort>72000</effort>
+    <prerequisite-task idref="t46"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t48">
+    <title>中央处理器</title>
+    <effort>72000</effort>
+    <prerequisite-task idref="t47"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t52">
+    <title>总线</title>
+    <effort>36000</effort>
+    <prerequisite-task idref="t48"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t53">
+    <title>I/O系统</title>
+    <effort>36000</effort>
+    <prerequisite-task idref="t52"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t55">
+    <title>英语真题试卷</title>
+    <effort>2988000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t56">
+    <title>背背吗？</title>
+    <effort>2988000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t58">
+    <title>综合复习（仿真）</title>
+    <effort>428400</effort>
+    <prerequisite-task idref="t62"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t61">
+    <title>计组真题试卷</title>
+    <effort>2988000</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t62">
+    <title>这时候什么都会了吧</title>
+    <type>milestone</type>
+    <prerequisite-task idref="t76"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t67">
+    <title>专业学习</title>
+    <type>group</type>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+    <prerequisite-task idref="t31"/>
+  </task>
+  <task id="t68">
+    <title>考试</title>
+    <type>milestone</type>
+    <prerequisite-task idref="t58"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t69">
+    <title>开始</title>
+    <type>milestone</type>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t75">
+    <title>学习完成</title>
+    <type>milestone</type>
+    <start-constraint-date>2018-09-19T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t77"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2018-09-19T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t76">
+    <title>练习</title>
+    <type>group</type>
+    <child-task idref="t37"/>
+    <child-task idref="t43"/>
+    <child-task idref="t13"/>
+    <child-task idref="t12"/>
+    <prerequisite-task idref="t75"/>
+  </task>
+  <task id="t77">
+    <title>学习</title>
+    <type>group</type>
+    <child-task idref="t31"/>
+    <child-task idref="t67"/>
+    <prerequisite-task idref="t69"/>
+  </task>
+  <task id="t78">
+    <title>考研计划</title>
+    <type>group</type>
+    <child-task idref="t69"/>
+    <child-task idref="t77"/>
+    <child-task idref="t75"/>
+    <child-task idref="t76"/>
+    <child-task idref="t62"/>
+    <child-task idref="t58"/>
+    <child-task idref="t68"/>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color space="srgb" r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
