@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 //初始化一个单链表，具有头指针，头结点，头结点->next=NULL
-int InitList(LinkList *L)
+Status InitList(LinkList *L)
 {
     (*L) = (LinkList)malloc(sizeof(struct LNode));
     (*L)->next = NULL;
@@ -11,7 +11,7 @@ int InitList(LinkList *L)
 }
 
 //头插法创建一个链表，链表长度为n
-int CreateListHead(LinkList *L, int n)
+Status CreateListHead(LinkList *L, int n)
 {
     struct LNode *p;
     for (int i = 0; i < n; i++)
@@ -24,7 +24,7 @@ int CreateListHead(LinkList *L, int n)
     return OK;
 }
 // 尾插法创建一个链表，链表长度为n
-int CreateListTail(LinkList *L, int n)
+Status CreateListTail(LinkList *L, int n)
 {
     struct LNode *p, *tmp;
     tmp = (*L);
@@ -52,7 +52,7 @@ int Getlength(LinkList L)
     return i;
 }
 //获取链表中第i个位置处节点的数据元素
-int GetElem(LinkList L,int i,ElemType *e)
+Status GetElem(LinkList L,int i,ElemType *e)
 {
     if (i < 1)
         return ERROR;
@@ -65,7 +65,7 @@ int GetElem(LinkList L,int i,ElemType *e)
     return OK;
 }
 // 在链表的指定位置（第i个节点）插入一个节点
-int InsertList(LinkList *L, int i, ElemType data)
+Status InsertList(LinkList *L, int i, ElemType data)
 {
     if (i < 1)
         return ERROR;
@@ -84,8 +84,33 @@ int InsertList(LinkList *L, int i, ElemType data)
     tmp->next = node;
     return OK;
 }
+
+// 在双链表中第i个位置之前插入一个节点
+Status InsertDoublyList(DoublyLinkList *L, int i, ElemType data)
+{
+    DoublyLinkList p, s;
+    if (i < 1)
+        return ERROR;
+    p = (*L);
+    for (int j = 1; j <= i; j++)
+    {
+        p = p->next;
+    }
+    if (!p)
+        return ERROR;
+    s = (DoublyLinkList)malloc(sizeof(struct DoublyLNode));
+    if (!s)
+        return OVERFLOW;
+    s->data = data;
+    s->prior = p; // 在第i-1个元素之后插入
+    s->next = p->next;
+    p->next->prior = s;
+    p->next = s;
+    return OK;
+}
+
 //给链表追加一个节点，在最末尾处增加
-int InsertListTail(LinkList *L, ElemType data)
+Status InsertListTail(LinkList *L, ElemType data)
 {
     LinkList tmp;
     struct LNode *node = (struct LNode*)malloc(sizeof(struct LNode));
@@ -104,7 +129,7 @@ int InsertListTail(LinkList *L, ElemType data)
     return OK;
 }
 //删除指定位置（第i个节点）处的节点
-int DeleteList(LinkList *L, int i, ElemType *data)
+Status DeleteList(LinkList *L, int i, ElemType *data)
 {
     if (i < 1)
         return ERROR;
@@ -124,8 +149,27 @@ int DeleteList(LinkList *L, int i, ElemType *data)
     tmp->next = node;
     return OK;
 }
+
+Status DeleteDoublyList(DoublyLinkList *L, int i, ElemType *e) {
+    DoublyLinkList p;
+    if (i < 1)
+        return ERROR;
+    p = (*L);
+    for (int j = 1; j <= i; j++)
+    {
+        p = p->next;
+    }
+    if (!p)
+        return ERROR;
+    *e = p->data;
+    p->prior->next = p->next;
+    p->next->prior = p->prior;
+    free(p);
+    return OK;
+}
+
 // 清空整个链表
-int ClearList(LinkList *L)
+Status ClearList(LinkList *L)
 {
     LinkList tmp;
     struct LNode *p;
@@ -145,7 +189,7 @@ int ClearList(LinkList *L)
     return OK;
 }
 //打印整个链表；
-int ShowList(LinkList L)
+Status ShowList(LinkList L)
 {
     LinkList p;
     int i = 0;
