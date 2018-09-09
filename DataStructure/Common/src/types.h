@@ -10,5 +10,6 @@
 
 typedef int Status;
 typedef int ElemType;
+typedef int VertexType;
 
 #endif /* __COMMON__TYPES_H */
