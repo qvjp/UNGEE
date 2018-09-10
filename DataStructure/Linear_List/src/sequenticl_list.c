@@ -106,7 +106,7 @@ Status NextElem(struct D_SqList L, ElemType cur_e, ElemType *next_e)
         return INFEASIBLE;
 }
 
-// 在线性表第i个位置插入e
+// 在线性表第i个位置插入e, i从1开始
 Status ListInsert(struct D_SqList *L, int i, ElemType e)
 {
     if (i < 1 || i > L->length + 1)
@@ -216,9 +216,11 @@ void PlaySList()
     printf("%d\n", L.length);
 }
 
+/*
 int main()
 {
     PlayDList();
     PlaySList();
     return 0;
 }
+*/
