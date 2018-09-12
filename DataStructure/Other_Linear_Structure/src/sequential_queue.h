@@ -3,7 +3,7 @@
 
 #include "../../Common/src/types.h"
 
-#define MAXSIZE 10
+#define MAXSIZE 100000
 struct Queue
 {
     ElemType data[MAXSIZE];
@@ -23,5 +23,7 @@ Status Put(struct Queue *q, ElemType e);
 Status Poll(struct Queue *q, ElemType *e);
 // 获取队首元素值
 Status Get(struct Queue q, ElemType *e);
+
+void ShowQueue(struct Queue q);
 
 #endif /* __SEQUENTIAL_STACK_H */

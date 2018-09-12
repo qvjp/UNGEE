@@ -17,6 +17,19 @@ Status InitQueue(struct Queue *q)
     return OK;
 }
 
+void ShowQueue(struct Queue q)
+{
+    struct Queue p = q;
+    ElemType a = 0;
+    int len  = QueueLength(p);
+    for (int i = 0; i < len; i++)
+    {
+        Poll(&p, &a);
+        printf("%d ", a);
+    }
+    printf("\n");
+}
+
 Status QueueEmpty(struct Queue q)
 {
     if (!(q.rear && q.front))
@@ -63,6 +76,7 @@ Status Get(struct Queue q, ElemType *e)
     return ERROR;
 }
 
+/*
 
 int main()
 {
@@ -108,3 +122,4 @@ int main()
     printf("%d\n", QueueLength(Q));
     return 0;
 }
+*/
