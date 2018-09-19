@@ -3,8 +3,6 @@
 #include "sort.h"
 #include <time.h>
 
-#define NUM 100000
-#define MAX 100
 
 void test(struct D_SqList L, int len)
 {
@@ -42,18 +40,29 @@ void progress(int i, int len)
 }
 
 // 生成随机序列
-void fuck(struct D_SqList *L)
+void fuck(struct D_SqList *L, int num, int max)
 {
 
     InitList(L);
-    for (int i = 1; i <= NUM; i++)
+    for (int i = 1; i <= num; i++)
     {
-        ListInsert(L, i, rand() % MAX);
+        ListInsert(L, i, rand() % max);
     }
 }
 
-int main()
+int main(int argc, char** argv)
 {
+    int NUM = 10;
+    int MAX = 100;
+    if (argc == 2)
+    {
+        NUM = atoi(argv[1]);
+    }
+    if (argc == 3)
+    {
+        NUM = atoi(argv[1]);
+        MAX = atoi(argv[2]);
+    }
     struct D_SqList L;
     srand(time(0));
     clock_t start, finish;
@@ -61,73 +70,138 @@ int main()
     printf("THE TEST COLLECTION'S SIZE IS: %d, FROM 0 TO %d.\n\n", NUM, MAX);
     fflush(stdout);
 
-    fuck(&L);
+    fuck(&L, NUM, MAX);
     start = clock();
-    printf("Insertion Sort:\n");
+    printf("Insertion Sort First:\n");
     InsertionSort(&L);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L,NUM);
 
-    fuck(&L);
     start = clock();
-    printf("Shell's Sort\n");
+    printf("Insertion Sort Second:\n");
+    InsertionSort(&L);
+    finish = clock();
+    printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
+    fflush(stdout);
+    test(L,NUM);
+
+    fuck(&L, NUM, MAX);
+    start = clock();
+    printf("Shell's Sort First:\n");
+    ShellSort(&L);
+    finish = clock();
+    printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
+    fflush(stdout);
+    test(L,NUM);
+
+    start = clock();
+    printf("Shell's Sort Second:\n");
     ShellSort(&L);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L,NUM);
     
-    fuck(&L);
+    fuck(&L, NUM, MAX);
     start = clock();
-    printf("Bubble Sort\n");
+    printf("Bubble Sort First:\n");
     BubbleSort(&L);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L,NUM);
 
-    fuck(&L);
     start = clock();
-    printf("Selection Sort\n");
+    printf("Bubble Sort Second:\n");
+    BubbleSort(&L);
+    finish = clock();
+    printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
+    fflush(stdout);
+    test(L,NUM);
+
+    fuck(&L, NUM, MAX);
+    start = clock();
+    printf("Selection Sort First:\n");
     SelectionSort(&L);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
 
-    fuck(&L);
     start = clock();
-    printf("Heap Sort\n");
+    printf("Selection Sort Second:\n");
+    SelectionSort(&L);
+    finish = clock();
+    printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
+    fflush(stdout);
+    test(L, NUM);
+
+    fuck(&L, NUM, MAX);
+    start = clock();
+    printf("Heap Sort First:\n");
     HeapSort(&L);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
 
-    fuck(&L);
     start = clock();
-    printf("Quick Sort:\n");
+    printf("Heap Sort Second\n");
+    HeapSort(&L);
+    finish = clock();
+    printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
+    fflush(stdout);
+    test(L, NUM);
+
+    fuck(&L, NUM, MAX);
+    start = clock();
+    printf("Quick Sort First:\n");
     QuickSort(&L);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
 
-    fuck(&L);
     start = clock();
-    printf("Merge Sort\n");
-    MergeSort(&L);
+    printf("Quick Sort Second:\n");
+    QuickSort(&L);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
 
 
-    fuck(&L);
+    fuck(&L, NUM, MAX);
     start = clock();
-    printf("Radix Sort\n");
+    printf("Merge Sort First:\n");
+    MergeSort(&L);
+    finish = clock();
+    printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
+    fflush(stdout);
+    test(L, NUM);
+
+    start = clock();
+    printf("Merge Sort Second:\n");
+    MergeSort(&L);
+    finish = clock();
+    printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
+    fflush(stdout);
+    test(L, NUM);
+
+    fuck(&L, NUM, MAX);
+    start = clock();
+    printf("Radix Sort First:\n");
+    RadixSort(&L);
+    finish = clock();
+    printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
+    fflush(stdout);
+    test(L, NUM);
+
+
+    start = clock();
+    printf("Radix Sort Second:\n");
     RadixSort(&L);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);

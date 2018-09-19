@@ -814,9 +814,126 @@ typedef struct
 
 
 
+#### 单项选择题
+
+------
+
+2018
+
+------
+
+【例题】若邻接表中有奇数个表结点，则该图是（          ）。
+
+A. 连通图
+
+B. 强连通图
+
+C. 无向图
+
+D. 有向图
 
 
 
+【例题】以下叙述中，不正确的是（         ）
+
+A. 图和树的区别之一在于树的序偶对个数等于顶点数减一、而图的序偶对个数可以大于顶点数。
+
+B. 假设有图G={V, E}及G’ = {V’, E’}，满足V’⊆V 且E’⊆E，则G’是G的子图。
+
+C. 无向图的连通分量指无向图中的极小连通子图
+
+D. 连通图的遍历一定能从图中某一顶点出发访遍图中全部顶点
+
+
+
+【例题】下列AOE网表示一项包含8个活动的工程，其关键活动为（         ）。
+
+<img src="./assets/image-20180915210221575.png" width=400>
+
+A. a,b,c,d,e,f
+
+B. b,c,d,e,h,g
+
+C. b,c,d,e,f,h
+
+D. a,b,d,e,f,h
+
+
+
+#### 问答与图示题
+
+-------
+
+2018
+
+------
+
+【例题】已知某无向网如图所示：
+
+<img src="./assets/image-20180915212251641.png" width=300>
+
+（1）采用邻接多重表表示该无向图，画出存储结构示意图（要求复合按边结点次序插入在相应链表中）
+
+（2）依据所建图的邻接多重表存储，分别给出该图的深度优先和广度优先遍历序列。
+
+（3）分别按Prim算法（从顶点A开始）及Kruskal算法依次给出最小生成树的边集。
+
+
+
+#### 程序阅读题
+
+------
+
+2018
+
+------
+
+【例题】1
+
+```c
+bool A-1(Graph G, VertexType Vi, VeretexType Vj)
+{
+    for (v = 0; v < G.vexnum; ++v)
+    {
+        visited[v] = false;
+    }
+    found = false;
+    i = LocateVex(G, Vi);
+    j = LocateVex(G, Vj);
+    A-2(G, i, j, found);
+    if (found)
+        return true;
+    else
+        return false;
+}
+
+void A-2(Graph G, int v, int u, bool &found)
+{
+    visited[v] = true;
+    for (w = FirstAdjVex(G, v); !found && w >= 0; w = NextAdjVex(G, v, w))
+    {
+        if (w == u)
+        {
+            found = true;
+            break;
+        }
+        if (!visited[w])
+            A-2(G, w, u, found);
+    }
+}
+```
+
+
+
+#### 算法设计题
+
+-----
+
+2018
+
+------
+
+【例题】已知有向图采用邻接表存储表示，试用深度优先搜索的策略基于图的邻接表存储写一算法，判断有向图是否存在回路。
 
 
 

@@ -967,6 +967,66 @@ Status Pop(LinkStack *s, ElemType *e)
 
 
 
+
+
+#### 填空题
+
+------
+
+2018
+
+------
+
+【例题】若每一数据只能进栈一次、出栈一次，则通过栈对先后输入的三个数据3，2，1进行调度，不能得到的调度结果为：\_\_\_\_\_\_\_\_\_\_\_。
+
+
+
+【例题】设有二维数组A\[10\]\[10\]，假设每个数组元素用4个字节存储，存储器按字节编址，从首地址1000开始以行序为主次序连续存放，则数组元素A\[3\]\[7\]的起始地址为\_\_\_\_\_\_\_\_\_\_\_。
+
+
+
+【例题】广义表((), (a)((b, c),d))的表尾为\_\_\_\_\_\_\_\_\_\_\_。
+
+
+
+#### 程序阅读题
+
+----
+
+2018
+
+-----
+
+【例题】1
+
+```c
+bool A(HString &S, int pos, HString T)
+{
+    if (pos < 1 || pos > S.length + 1)
+    {
+        return false;
+    }
+    if (T.length)
+    {
+        S.ch = (char*)realloc(S.ch, (S.length + T.length) * sizeof(char));
+        if (!S.ch)
+            return false;
+        for (i = S.length - 1; i >= pos - 1; i--)
+            S.ch[i + T.length] = S.ch[i];
+        for (i = 0; i < T.length; i++)
+            S.ch[pos - 1 + i] = T.ch[i];
+        S.length += T.length;
+	}
+    return true;
+}
+```
+
+
+
+
+
+
+
 ### 习题精炼
 
 【习题1】用栈的思想方法，设计算法，计算`((1+29)+(3*(48-34)))/30`。

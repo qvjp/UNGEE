@@ -18,30 +18,31 @@ void RadixSort(struct D_SqList *l)
 {
     int max = getMax(*l);
     int len = l->length;
-    struct Queue Q[10];
-    int time = 10;
+    struct D_Queue Q[10];
+    //struct Queue Q[10];
+    int time = 1;
     for (int i = 0; i < 10; i++)
     {
-        InitQueue(&Q[i]);
+        InitDQueue(&Q[i]);
     }
 
-    while (max / (time/10))
+    while (max / time)
     {
         int d = 0;
         // 提取一位，放到对应的桶中
         for (int i = 0; i < len; i++)
         {
-            d = (l->elem[i] % time) / (time / 10);
-            Put(&Q[d], l->elem[i]);
+            d = (l->elem[i] % (time * 10) / time);
+            DPut(&Q[d], l->elem[i]);
         }
         // 依次将桶中的数据取出，放回序列
         ClearList(l);
         for (int k = 0, i = 0; k < 10; k++)
         {
             int a = 0;
-            while (QueueLength(Q[k]))
+            while (DQueueLength(Q[k]))
             {
-                Poll(&Q[k], &a);
+                DPoll(&Q[k], &a);
                 ListInsert(l, i + 1, a);
                 i++;
             }

@@ -7,7 +7,7 @@ void sort(struct D_SqList *l, int start, int end)
         return;
     int mid = start;
     ElemType tmp = 0;
-    for (int i = start, j = end; i < j; )
+    for (int i = start, j = end; i < j;)
     {
         for (; l->elem[mid] <= l->elem[j] && j > i;)
         {
@@ -28,7 +28,7 @@ void sort(struct D_SqList *l, int start, int end)
     }
     sort(l, start, mid - 1);
     sort(l, mid + 1, end);
-    //progress(l->length-(end-start),l->length);
+    // progress(l->length-(end-start),l->length);
 }
 
 void QuickSort(struct D_SqList *l)
