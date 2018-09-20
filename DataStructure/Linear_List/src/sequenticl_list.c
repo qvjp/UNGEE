@@ -59,7 +59,7 @@ Status GetElem(struct D_SqList L, int i, ElemType *e)
 int LocateElem(struct D_SqList L, ElemType e)
 {
     int i = 0;
-    for(;i <= L.length ;i++)
+    for(;i < L.length; i++)
     {
         if (L.elem[i] == e)
             break;
