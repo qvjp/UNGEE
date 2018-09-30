@@ -14,3 +14,5 @@
 <img src="./概率论与数理统计.png"/>
 
 <img src="./线性代数.png"/>
+
+<img src="./高数.png"/>
