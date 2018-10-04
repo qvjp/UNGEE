@@ -226,7 +226,7 @@ void CalcPostfix(char *e, int *a)
     int x = 0;
     int y = 0;
     InitStack(&stack);
-    char *expression = malloc(sizeof(strlen(e)));
+    char *expression = malloc(sizeof(char) * strlen(e));
     strcpy(expression, e);
     while (*expression)
     {
