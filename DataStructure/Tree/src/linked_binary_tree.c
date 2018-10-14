@@ -1,7 +1,6 @@
 #include "linked_binary_tree.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "../../Other_Linear_Structure/src/linked_queue.h"
 
 
 // 初始化二叉树
@@ -26,7 +25,7 @@ Status preorder(BTree b)
 {
     if (b)
     {
-        printf("%d ", b->data);
+        printf("%c ", b->data);
         preorder(b->lchild);
         preorder(b->rchild);
     }
@@ -40,7 +39,7 @@ Status inorder(BTree b)
     if (b)
     {
         inorder(b->lchild);
-        printf("%d ", b->data);
+        printf("%c ", b->data);
         inorder(b->rchild);
     }
     return OK;
@@ -53,7 +52,7 @@ Status postorder(BTree b)
     {
         postorder(b->lchild);
         postorder(b->rchild);
-        printf("%d ", b->data);
+        printf("%c ", b->data);
     }
     return OK;
 }
@@ -80,7 +79,6 @@ int BTreeDepth(BTree t)
     return d;
 }
 
-/*
 int main()
 {
     char *tree = "ABC##D##EF##H##";
@@ -95,4 +93,3 @@ int main()
     printf("Depth: %d\n", BTreeDepth(b));
     return 0;
 }
-*/

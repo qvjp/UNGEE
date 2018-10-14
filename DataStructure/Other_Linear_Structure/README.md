@@ -211,6 +211,83 @@ Status GetTopElem(struct Stack s, ElemType *e)
 
 ![中缀转后缀](./assets/image-20180904135800399.png)
 
+
+
+下边是代码示例：
+
+```c
+void ToPostfix(char *e, char* post)
+{
+    int index = 0;
+    int pop = 0;
+    struct StackNode *stack;
+    InitStack(&stack);
+    for(;*e;)
+    {
+        pop = 0;
+        if (*e > 47 && *e < 58) // 操作数直接输出
+            post[index++] = *e;
+        if (*e == 40)           // '('
+            Push(&stack, *e);
+        if (*e == 41)           // ')'
+        {
+            for (Pop(&stack, &pop); pop != 40; Pop(&stack, &pop))
+            {
+                post[index++] = pop;
+            }
+        }
+
+        if (*e == 42 || *e == 43 || *e == 45 || *e ==47)   // * + - /
+        {
+            if(!StackEmpty(stack))  // 栈为空
+            {
+                Push(&stack, *e);
+            }
+            else
+            {
+                for (; (StackEmpty(stack) && pop != -1) ;)
+                {
+                    GetTopElem(stack, &pop);
+                    switch (pop)
+                    {
+                        case 42:
+                        case 47:
+                            Pop(&stack, &pop);
+                            post[index++] = pop;
+                            break;
+                        case 43:
+                        case 45:
+                            if (*e == 43 || *e == 45)
+                            {
+                                Pop(&stack, &pop);
+                                post[index++] = pop;
+                            }
+                            else
+                                pop = -1;
+                            break;
+                        default:
+                            pop = -1;
+                            break;
+                    }
+
+                }
+                Push(&stack, *e);
+            }
+        }
+        *e++;
+    }
+    // 全部出栈
+    for (; StackEmpty(stack);)
+    {
+        Pop(&stack, &pop);
+        post[index++] = pop;
+    }
+    post[index] = '\0';
+}
+```
+
+
+
 ###### 后缀式的计算
 
 后缀表达式的计算比较容易，借助栈可以很轻松实现。过程如下：
