@@ -30,7 +30,7 @@
 7. [内部排序](./Sorting_Algorithm/README.md)
 
 
-[完整合集](./release/release.html)
+[完整合集](https://github.com/qvjp/UNGEE/releases/tag/3)(下载release.zip阅读)
 
 ---
 
