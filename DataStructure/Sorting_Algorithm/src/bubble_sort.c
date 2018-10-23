@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "sort.h"
+#define PROGRESS
 
 void BubbleSort(struct D_SqList *l)
 {
@@ -16,7 +17,9 @@ void BubbleSort(struct D_SqList *l)
                 l->elem[j + 1] = tmp;
             }
         }
+#ifdef PROGRESS
         progress(i, len-2);
+#endif
     }
 }
 

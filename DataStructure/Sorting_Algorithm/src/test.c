@@ -4,6 +4,10 @@
 #include <time.h>
 
 
+// 打开注释可测试已排序序列再次排序所用时间
+//#define SECOND
+
+
 void test(struct D_SqList L, int len)
 {
     if (len != L.length)
@@ -79,6 +83,7 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L,NUM);
 
+#ifdef SECOND
     start = clock();
     printf("Insertion Sort Second:\n");
     InsertionSort(&L);
@@ -86,6 +91,7 @@ int main(int argc, char** argv)
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L,NUM);
+#endif
 
     fuck(&L, NUM, MAX);
     start = clock();
@@ -96,6 +102,7 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L,NUM);
 
+#ifdef SECOND
     start = clock();
     printf("Shell's Sort Second:\n");
     ShellSort(&L);
@@ -103,6 +110,7 @@ int main(int argc, char** argv)
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L,NUM);
+#endif
     
     fuck(&L, NUM, MAX);
     start = clock();
@@ -113,6 +121,7 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L,NUM);
 
+#ifdef SECOND
     start = clock();
     printf("Bubble Sort Second:\n");
     BubbleSort(&L);
@@ -120,6 +129,7 @@ int main(int argc, char** argv)
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L,NUM);
+#endif
 
     fuck(&L, NUM, MAX);
     start = clock();
@@ -130,6 +140,7 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L, NUM);
 
+#ifdef SECOND
     start = clock();
     printf("Selection Sort Second:\n");
     SelectionSort(&L);
@@ -137,6 +148,7 @@ int main(int argc, char** argv)
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
+#endif
 
     fuck(&L, NUM, MAX);
     start = clock();
@@ -147,6 +159,7 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L, NUM);
 
+#ifdef SECOND
     start = clock();
     printf("Heap Sort Second\n");
     HeapSort(&L);
@@ -154,6 +167,7 @@ int main(int argc, char** argv)
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
+#endif
 
     fuck(&L, NUM, MAX);
     start = clock();
@@ -164,6 +178,7 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L, NUM);
 
+#ifdef SECOND
     start = clock();
     printf("Quick Sort Second:\n");
     QuickSort(&L);
@@ -171,6 +186,7 @@ int main(int argc, char** argv)
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
+#endif
 
 
     fuck(&L, NUM, MAX);
@@ -182,6 +198,7 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L, NUM);
 
+#ifdef SECOND
     start = clock();
     printf("Merge Sort Second:\n");
     MergeSort(&L);
@@ -189,6 +206,7 @@ int main(int argc, char** argv)
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
+#endif
 
     fuck(&L, NUM, MAX);
     start = clock();
@@ -200,6 +218,7 @@ int main(int argc, char** argv)
     test(L, NUM);
 
 
+#ifdef SECOND
     start = clock();
     printf("Radix Sort Second:\n");
     RadixSort(&L);
@@ -208,4 +227,5 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L, NUM);
     return 0;
+#endif
 }

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "sort.h"
+#define PROGRESS
 
 void adjustHeap(struct D_SqList *l, int parent, int length)
 {
@@ -28,7 +29,9 @@ void HeapSort(struct D_SqList *l)
     }
     for (int i = len - 1; i > 0; i--)
     {
+#ifdef PROGRESS
         progress(len-i, len-1);
+#endif
         int tmp = l->elem[i];
         l->elem[i] = l->elem[0];
         l->elem[0] = tmp;

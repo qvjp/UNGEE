@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "sort.h"
+#define PROGRESS
 
 void SelectionSort(struct D_SqList *l)
 {
@@ -19,7 +20,9 @@ void SelectionSort(struct D_SqList *l)
         tmp = l->elem[min];
         l->elem[min] = l->elem[i];
         l->elem[i] = tmp;
+#ifdef PROGRESS
         progress(i, len-2);
+#endif
     }
 
 }

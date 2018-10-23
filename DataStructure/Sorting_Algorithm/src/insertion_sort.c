@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "sort.h"
 
+#define PROGRESS
+
 void InsertionSort(struct D_SqList *l)
 {
     int len = l->length;
@@ -17,6 +19,8 @@ void InsertionSort(struct D_SqList *l)
                 l->elem[j-1] = tmp;
             }
         }
+#ifdef PROGRESS
         progress(i, len-2);
+#endif
     }
 }

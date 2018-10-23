@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
+#define PROGRESS
 
 void ShellSort(struct D_SqList *l)
 {
@@ -20,7 +21,9 @@ void ShellSort(struct D_SqList *l)
                 }
             }
         }
+#ifdef PROGRESS
         progress((len/2-step), (len/2-1));
+#endif
     }
 }
 
