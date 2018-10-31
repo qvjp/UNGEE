@@ -19,7 +19,6 @@ struct Queue
 Status InitQueue(struct Queue **q)
 {
     (*q) = (struct Queue*)malloc(sizeof(struct Queue));
-    (*q)->front = (*q)->rear = (struct QueueNode*)malloc(sizeof(struct QueueNode));
     (*q)->front = (*q)->rear = NULL;
     return OK;
 }
@@ -88,16 +87,17 @@ int main()
 {
     struct Queue *Q;
     int a = 10;
-    printf("%d \n", QueueEmpty(Q));
+    printf("Empty?: %d \n", QueueEmpty(Q));
     InitQueue(&Q);
-    printf("%d \n", QueueEmpty(Q));
-    //printf("%d\n", QueueLength(Q));
+    printf("Empty?: %d \n", QueueEmpty(Q));
+    printf("Length: %d\n", QueueLength(Q));
     Put(&Q, 12);
     Put(&Q, 12);
     Put(&Q, 12);
     Poll(&Q, &a);
 
     Put(&Q, 12);
-    printf("%d\n", QueueLength(Q));
+    printf("Length: %d\n", QueueLength(Q));
+    printf("Empty?: %d \n", QueueEmpty(Q));
     return 0;
 }

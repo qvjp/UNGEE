@@ -200,6 +200,8 @@ void PlayDList()
     ListShow(L);
     printf("PriorElem Status: %d\n", PriorElem(L, 110, &b));
     printf("after-PriorElem: b = %d\n", b);
+    printf("DestroyList:\n");
+    DestroyList(&L);
     ListShow(L);
 }
 
