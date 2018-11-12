@@ -5,7 +5,7 @@
 
 
 // 打开注释可测试已排序序列再次排序所用时间
-//#define SECOND
+#define SECOND
 
 
 void test(struct D_SqList L, int len)
