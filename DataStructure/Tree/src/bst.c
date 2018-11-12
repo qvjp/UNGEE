@@ -131,7 +131,7 @@ int main()
     BTree t = NULL;
     char *str = "31524967";
     InitBST(&t, str);
-    Remove(&t, 7);
+    Remove(&t, 1);
     inorder(t);
     printf("\n");
     return 0;

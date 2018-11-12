@@ -202,13 +202,14 @@ Status ShowList(LinkList L)
     printf("\n");
     return OK;
 }
+
 int main()
 {
     LinkList L;
     InitList(&L);
     ShowList(L);
-    // CreateListHead(&L, 0);
-    CreateListTail(&L, 33);
+    CreateListHead(&L, 33);
+    // CreateListTail(&L, 33);
     ShowList(L);
     printf("%d\n", Getlength(L));
     ElemType a = 0;

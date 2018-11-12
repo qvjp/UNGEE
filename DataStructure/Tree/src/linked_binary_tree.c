@@ -84,10 +84,11 @@ int main()
     char *tree = "ABC##D##EF##H##";
     BTree b;
     InitBTree(&b, &tree);
+    printf("先序遍历:");
     preorder(b);
-    printf("\n");
+    printf("\n中序遍历:");
     inorder(b);
-    printf("\n");
+    printf("\n后序遍历:");
     postorder(b);
     printf("\n");
     printf("Depth: %d\n", BTreeDepth(b));

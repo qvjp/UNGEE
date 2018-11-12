@@ -146,7 +146,7 @@ Status GetElem(struct D_SqList L, int i, ElemType *e)
 int LocateElem(struct D_SqList L, ElemType e)
 {
     int i = 0;
-    for(;i <= L.length ;i++)
+    for(; i <= L.length; i++)
     {
         if (L.elem[i] == e)
             break;
@@ -284,7 +284,7 @@ Status SListInsert(struct S_SqList *L, int i, ElemType e)
 
 #### 线性表的链式存储
 
-通过顺序表代码的研究，我们发现顺序表对数据的插入、删除支持很不好，要进行大量数据的移动，这时线性表的链式存储结构应用而生，正好解决了这个问题。
+通过顺序表代码的研究，我们发现顺序表对数据的插入、删除支持很不好，要进行大量数据的移动，这时线性表的链式存储结构应运而生，正好解决了这个问题。
 
 链式存储不需要连续的物理空间，而是通过指针将数据联系起来，因此链表的删除插入等不需要移动元素，只要改变指针所指向的位置即可。但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。
 

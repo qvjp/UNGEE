@@ -3,6 +3,8 @@
 
 #include "../../Common/src/types.h"
 
+#define MAXSIZE 10
+
 /**
  * 单链表节点类型
  */
@@ -32,6 +34,7 @@ struct DoublyLNode
 };
 
 typedef struct LNode* LinkList;
+typedef struct SLNode SLinkList[MAXSIZE];
 typedef struct DoublyLNode* DoublyLinkList;
 
 // 初始化一个单链表，具有头指针，头结点，头结点->next=NULL
