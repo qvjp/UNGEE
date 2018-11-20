@@ -295,9 +295,41 @@ C. O(n)                                     D. O(nlogn)
 
 
 
+答案：参考代码如下：
 
+```c
+// 递归算法
+unsigned long f1(int n)
+{
+    if (n == 1 || n == 0)
+    {
+        return 1;
+    }
+    return f1(n - 1) + f1(n - 2);
+}
 
+//非递归算法
+unsigned long f2(int n)
+{
+    if (n == 0)
+        return 1;
+    unsigned long result = 1;
+    unsigned long l[2] = {0,0};
+    for (int i = 1; i <= n; i++)
+    {
+        l[0] = result;
+        result += l[1];
+        l[1] = l[0];
+    }
+    return result;
+}
+```
 
+代码本身较为简单，时间复杂度计算如下：
+
+f1: 观察代码，n每变化1都会调用两次f1，所以时间复杂度就是2<sup>2</sup>。
+
+f2: 循环实现中只包含一个从1到n的for循环，所以时间复杂度为n。
 
 
 
