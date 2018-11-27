@@ -10,6 +10,7 @@
 
 void test(struct D_SqList L, int len)
 {
+    int result = 2; // 正序
     if (len != L.length)
     {
         printf("FALSE! LENGTH NOT EQ!  %d -> %d\n\n", len, L.length);
@@ -19,11 +20,26 @@ void test(struct D_SqList L, int len)
     {
         if (L.elem[i] > L.elem[i+1])
         {
-            printf("FALSE IN %d\n\n", i);
-            return;
+            result = 1; // 发现逆序
+            break;
         }
     }
-    printf("TRUE\n\n");
+    if (result == 1)
+        for (int i = 0; i < L.length-1; i++)
+        {
+            if (L.elem[i] < L.elem[i+1])
+            {
+                result = 0; //逆序里出现正序
+                break;
+            }
+        }
+    if (result == 1)
+        printf("TRUE But INVERSE\n\n");
+    else if (result == 2)
+        printf("TRUE\n\n");
+    else
+        printf("FALSE\n\n");
+
 }
 
 void progress(int i, int len)
@@ -56,7 +72,7 @@ void fuck(struct D_SqList *L, int num, int max)
 
 int main(int argc, char** argv)
 {
-    int NUM = 10;
+    int NUM = 100;
     int MAX = 100;
     if (argc == 2)
     {
@@ -111,7 +127,7 @@ int main(int argc, char** argv)
     fflush(stdout);
     test(L,NUM);
 #endif
-    
+
     fuck(&L, NUM, MAX);
     start = clock();
     printf("Bubble Sort First:\n");
@@ -172,7 +188,7 @@ int main(int argc, char** argv)
     fuck(&L, NUM, MAX);
     start = clock();
     printf("Quick Sort First:\n");
-    QuickSort(&L);
+    QuickSort(&L, 1);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
@@ -181,11 +197,12 @@ int main(int argc, char** argv)
 #ifdef SECOND
     start = clock();
     printf("Quick Sort Second:\n");
-    QuickSort(&L);
+    QuickSort(&L, 0);
     finish = clock();
     printf("%f seconds\n", (double)(finish - start) / CLOCKS_PER_SEC);
     fflush(stdout);
     test(L, NUM);
+
 #endif
 
 

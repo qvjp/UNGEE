@@ -1,38 +1,57 @@
 #include <stdio.h>
 #include "sort.h"
 
-void sort(struct D_SqList *l, int start, int end)
+/**
+ * 获取枢纽元位置
+ * 使用第一个或最后一个作为枢纽元会使已排序的序列排序缓慢
+ * 这里使用中间位置,表现还可以
+ */
+int getPivot(struct D_SqList *l, int start, int end)
 {
-    if (start >= end)
+    return (start + end) / 2;
+}
+
+/**
+ * flag 非0是由小到大
+ */
+void sort(struct D_SqList *l, int start, int end, int flag)
+{
+    if ((flag && (start > end)) || ((!flag) && (start > end)))
         return;
-    int mid = start;
-    ElemType tmp = 0;
-    for (int i = start, j = end; i < j;)
+    int pivot = getPivot(l, start, end);
+    int t; // 用于交换的临时变量
+    ElemType tmp = l->elem[pivot]; // 保存枢纽元
+    int i = start;
+    int j = end;
+    for (; i != j;)
     {
-        for (; l->elem[mid] <= l->elem[j] && j > i;)
+        for (; ((flag &&(tmp <= l->elem[j])) || (!flag && (tmp >= l->elem[j]))) && j > i;)
         {
             j--;
         }
-        tmp = l->elem[j];
-        l->elem[j] = l->elem[mid];
-        l->elem[mid] = tmp;
-        mid = j;
-        for (; l->elem[mid] >= l->elem[i] && i < j;)
+        for (; ((flag && tmp >= l->elem[i]) || (!flag && tmp <= l->elem[i])) && i < j;)
         {
             i++;
         }
-        tmp = l->elem[i];
-        l->elem[i] = l->elem[mid];
-        l->elem[mid] = tmp;
-        mid = i;
+        if (j>i)
+        {
+            t = l->elem[i];
+            l->elem[i] = l->elem[j];
+            l->elem[j] = t;
+        }
     }
-    sort(l, start, mid - 1);
-    sort(l, mid + 1, end);
+
+    l->elem[start] = l->elem[j];
+    l->elem[j] = tmp;
+
+    sort(l, start, j - 1, flag);
+    sort(l, j + 1, end, flag);
     // progress(l->length-(end-start),l->length);
 }
 
-void QuickSort(struct D_SqList *l)
+void QuickSort(struct D_SqList *l, int flag)
 {
     int len = l->length;
-    sort(l, 0, len-1);
+    sort(l, 0, len-1, flag);
 }
+
