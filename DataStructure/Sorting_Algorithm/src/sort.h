@@ -1,6 +1,9 @@
 #ifndef __SORT_H
 #define __SORT_H
 
+// 是否显示进度条
+// #define PROGRESS
+
 #include "../../Common/src/types.h"
 #include "../../Linear_List/src/sequenticl_list.h"
 
@@ -19,6 +22,7 @@ void RadixSort(struct D_SqList *l);
 
 void progress(int i, int len);
 
+void swap(struct D_SqList *l, int i, int j);
 
 
 #endif /* __SORT_H */

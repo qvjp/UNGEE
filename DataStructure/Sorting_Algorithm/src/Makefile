@@ -2,6 +2,7 @@ test: \
 	../../Linear_List/src/sequenticl_list.c \
 	../../Other_Linear_Structure/src/sequential_queue.c \
 	sort.h \
+	sort.c \
 	heap_sort.c \
 	merge_sort.c \
 	radix_sort.c \

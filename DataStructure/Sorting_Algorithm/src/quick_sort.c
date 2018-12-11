@@ -46,7 +46,6 @@ void sort(struct D_SqList *l, int start, int end, int flag)
 
     sort(l, start, j - 1, flag);
     sort(l, j + 1, end, flag);
-    // progress(l->length-(end-start),l->length);
 }
 
 void QuickSort(struct D_SqList *l, int flag)

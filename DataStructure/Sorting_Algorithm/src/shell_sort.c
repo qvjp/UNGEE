@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
-#define PROGRESS
 
 void ShellSort(struct D_SqList *l)
 {

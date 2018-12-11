@@ -1,23 +1,24 @@
 #include <stdio.h>
 #include "sort.h"
-#define PROGRESS
 
+
+/**
+ * 构建大顶堆
+ */
 void adjustHeap(struct D_SqList *l, int parent, int length)
 {
-    int tmp = l->elem[parent];
     int child = 2 * parent + 1; // 左孩子
-    while (child < length)
+    while (child < length) // 若存在左孩子
     {
-        // 如果右孩子存在
+        // child为较小的孩子
         if (child + 1 < length && l->elem[child] < l->elem[child + 1])
             child++;
-        if (tmp >= l->elem[child])
+        if (l->elem[parent] >= l->elem[child])
             break;
-        l->elem[parent] = l->elem[child];
+        swap(l, parent, child);
         parent = child;
-        child = 2 * parent + 1;
+        child = 2 * child + 1;
     }
-    l->elem[parent] = tmp;
 }
 
 void HeapSort(struct D_SqList *l)
@@ -29,12 +30,11 @@ void HeapSort(struct D_SqList *l)
     }
     for (int i = len - 1; i > 0; i--)
     {
+// 是否显示进度条
 #ifdef PROGRESS
         progress(len-i, len-1);
 #endif
-        int tmp = l->elem[i];
-        l->elem[i] = l->elem[0];
-        l->elem[0] = tmp;
+        swap(l, i, 0);
         adjustHeap(l, 0, i);
     }
 }
